@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__icone">
+            <img src="./assets/Boca-lego.jpg" width="70px" alt="Boneco lego com camiseta do Boca Juniors"> 
+        </div>
+            <div class="cabecalho__texto">
+            <p>DECODIFICADOR DE TEXTO</p>
+        </div>
+    </header>
+    <main class="principal">
+        <section class="principal__conteudo">
+            <textarea id="textoAnalisar" rows="10" cols="50" placeholder="Digite seu texto" style="border: none; outline: none; resize:none"></textarea> </br>
+            <div class="principal__conteudo__inferior">
+                <div class="principal__conteudo__inferior__alerta">
+                    <img src="./assets/ico-exclamation-circle-fill.png">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="principal__conteudo__inferior__botoes">
+                    <button id="toggleButton" click="button" class="principal__botao__critografar">Criptografar</button>
+                    <button click="button" class="principal__botao__descritografar">Descriptografar</button></br>
+                </div>    
+            </div>
+        </section>
+        <div id="section1" class="principal__conteudo__resultado">
+            <img src="./assets/imagem_direita.svg" class="principal__conteudo__resultado__imagem"></br>
+            <div class="principal__conteudo__resultado__texto">
+                <p class="principal__conteudo__resultado__texto__bold">Nenhuma mensagem encontrada</p>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </div>  
+        <div id="section2" class="principal__conteudo__resultado__hover" style="display: none" >
+            <textarea id="resultado-cripto" rows="10"  cols="30" placeholder="Digite seu texto" style="border: none; outline: none; resize:none">resultado</textarea> </br>
+            <div>
+                <button class="principal__conteudo__resultado__hover__botaocopiar" onclick="copiar()">Copiar</button>
+            </div>
+        </div>   
+    </main>
+    <footer class="rodape">2024 - &copy; Copywright agnaka - Todos os direitos reservados.</footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
